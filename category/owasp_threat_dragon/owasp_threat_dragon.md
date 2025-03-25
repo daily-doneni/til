@@ -9,3 +9,4 @@
 - [OWASP project page - Threat Dragon](https://owasp.org/www-project-threat-dragon/)
     - [Threat Dragon 2.4 버전 docs](https://owasp.org/www-project-threat-dragon/docs-2/)
 - [github - Threat Dragon](https://github.com/OWASP/threat-dragon)
+- [try 2.x threat dragon wep app](https://www.threatdragon.com/#/)
