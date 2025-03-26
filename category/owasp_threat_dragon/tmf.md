@@ -19,7 +19,7 @@
         - `title`: 해당 다이어그램의 제목
         - `diagramType`: 다이어그램 유형 → CIA, DIE, LINDDUN, PLOT4ai, STRIDE, Generic 중 하나
         - `placeholder`: 임시 안내 텍스트
-        - `thumbnail`: 썸네일 경로 (Threat Dragon 내부 경로)
+        - `thumbnail`: 썸네일 경로 (Threat Dragon 내부 서버 상의 경로)
         - `version`: 다이어그램 포맷이 생성된 Threat Dragon 버전
         - `cells`: 다이어그램 안의 모든 구성요소를 배열로 가짐
             - `position`: 캔버스 상 위치
