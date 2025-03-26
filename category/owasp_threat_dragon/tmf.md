@@ -29,14 +29,22 @@
                 - `width`
                 - `height`
             - `attrs`: UI 스타일 관련 속성
-                - `text`
+                - `text`: 
                     - `text`
-                - `body`
+                - `body`: (Actor) 도형
                     - `stroke`: 외곽선 색상
                     - `strokeWidth`: 외곽선 두께께
                     - `strokeDasharray`: 외곽선의 점선 패턴을 정의하는 속성 ("선의 길이 공백 길이")
+                - `topLine`: (Store만) 상단 선분
+                    - `stroke`
+                    - `strokeWidth`
+                    - `strokeDasharray`
+                - `bottomLine`: (Store만) 하단단 선분
+                    - `stroke`
+                    - `strokeWidth`
+                    - `strokeDasharray`
             - `visible`: 다이어그램 캔버스에 표시 여부
-            - `shape`: UI 형태 및 논리적 역할을 결정 (actor, store, process, flow, boundary)
+            - `shape`: UI 형태 및 논리적 역할을 결정 ("actor", "store", "process", "flow", "boundary")
                 <details>
                     <summary><b>종류</b></summary>
                     <div>
@@ -104,6 +112,11 @@
                 - `reasonOutOfScope`: 범위 밖인 이후 (Properties—Reason for out of scope)
                 - `hasOpenThreats`: 미해결(open)된 위협이 있는지 여부 bool
                 - `provideAuthentication`: (Actor에서만) 인증 기능 제공 여부 bool (Properties—Provides Authentication)
+                - `isALog`: (Store에서만) 로그 여부 bool (Properties—is a Log)
+                - `isEncrypted`: (Store에서만) 저장소 암호화 여부 bool (Properties—Encrypted)
+                - `storesInventory`: (Store에서만) 재고정보(=운영적 가치가 높은 데이터) 저장 여부 bool (Properties—Stores Inventory)
+                - `storesCredentials`: (Store에서만) 민감한 자격정보 저장 여부 bool (Properties—Stores Credentials)
+                - `isSigned`: (Store에서만) 데이터 무결성 보호(서명) 여부 bool (Properties—Signed)
                 - `threats`: 위협 목록
                     - `id`: 위협 고유 식별 UUID
                     - `title`: 위협의 제목 (Threats—Title)
@@ -130,6 +143,18 @@
                     - `number`: 다이어그램 내 위협 번호. 넘버링을 위해.
                     - `score`: CVSS 등급처럼 사용할 수 있음. → 빈 문자열 가능
                 - `threatFrequency`: 유형별 위협이 몇 개 있는지 나타냄
+                        <details>
+                            <summary><b>종류</b></summary>
+                            <div>
+                                <li>spoofing</li>
+                                <li>tampering</li>
+                                <li>repudiation</li>
+                                <li>informationDisclosure</li>
+                                <li>denialOfService</li>
+                                <li>elavationOfPrevilege</li>
+                            </div>
+                        </details>
+                        
             - `tools`: UI 보조 기능(도구 버튼/옵션)을 제어하기 위한 부가적인 정보
                 - `items`: UI 상 제공되는 도구 버튼의 목록
                         <details>
