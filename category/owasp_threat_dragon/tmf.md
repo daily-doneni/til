@@ -386,6 +386,56 @@
 - tools
  - items
  - name
+ #### 4. `tm.Flow`
+- attrs
+    - line
+- shape
+- width
+- height
+- zIndex
+- source
+    - x
+    - y
+- target
+    - cell
+    - port
+- vertices
+- connector
+- id
+- labels
+- data
+    - type
+    - name
+    - description
+    - outOfScope
+    - reasonOutOfScope
+    - hasOpenThreats
+    - isBidirectional
+    - isEncrypted
+    - isPublicNetwork
+    - protocol
+    - threats
+        - id
+        - title
+        - status
+        - severity
+        - type
+        - description
+        - mitigation
+        - modelType
+        - new
+        - number
+        - score
+    - threatFrequency
+        - spoofing
+        - tampering
+        - repudiation
+        - informationDiscloure
+        - denialOfService
+        - elaviationOfPrivilege
+- tools
+ - items
+ - name
 
 
 ### 유형별 섹션 정리표 (참고용)
