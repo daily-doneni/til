@@ -111,12 +111,16 @@
                 - `outOfScope`: 요소가 모델 범위 외인지 bool (Properties—Out of Scope 체크박스)
                 - `reasonOutOfScope`: 범위 밖인 이후 (Properties—Reason for out of scope)
                 - `hasOpenThreats`: 미해결(open)된 위협이 있는지 여부 bool
-                - `provideAuthentication`: (Actor에서만) 인증 기능 제공 여부 bool (Properties—Provides Authentication)
-                - `isALog`: (Store에서만) 로그 여부 bool (Properties—is a Log)
-                - `isEncrypted`: (Store에서만) 저장소 암호화 여부 bool (Properties—Encrypted)
-                - `storesInventory`: (Store에서만) 재고정보(=운영적 가치가 높은 데이터) 저장 여부 bool (Properties—Stores Inventory)
-                - `storesCredentials`: (Store에서만) 민감한 자격정보 저장 여부 bool (Properties—Stores Credentials)
-                - `isSigned`: (Store에서만) 데이터 무결성 보호(서명) 여부 bool (Properties—Signed)
+                - `provideAuthentication`: (*Actor*) 인증 기능 제공 여부 bool (Properties—Provides Authentication)
+                - `isALog`: (*Store*) 로그 여부 bool (Properties—is a Log)
+                - `isEncrypted`: (*Store*) 저장소 암호화 여부 bool (Properties—Encrypted)
+                - `storesInventory`: (*Store*) 재고정보(=운영적 가치가 높은 데이터) 저장 여부 bool (Properties—Stores Inventory)
+                - `storesCredentials`: (*Store*) 민감한 자격정보 저장 여부 bool (Properties—Stores Credentials)
+                - `isSigned`: (*Store*) 데이터 무결성 보호(서명) 여부 bool (Properties—Signed)
+                - `privilegeLevel`: (*Process*) 권한 수준 string(자유) (Properties—Privilege Level)
+                - `handleCardPayment`: (*Process*) 결제 정보 처리 여부 bool (Properties—Card Payment)
+                - `isWebApplication`: (*Process*) 웹앱 기반 여부 bool (Properties—Web Application)
+                - `handleGoodsOrServices`: (*Process*) 실제 상품/서비스 처리 여부 (Properties—Goods or Services)
                 - `threats`: 위협 목록
                     - `id`: 위협 고유 식별 UUID
                     - `title`: 위협의 제목 (Threats—Title)
@@ -154,7 +158,7 @@
                                 <li>elavationOfPrevilege</li>
                             </div>
                         </details>
-                        
+
             - `tools`: UI 보조 기능(도구 버튼/옵션)을 제어하기 위한 부가적인 정보
                 - `items`: UI 상 제공되는 도구 버튼의 목록
                         <details>
