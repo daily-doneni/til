@@ -31,15 +31,15 @@
             - `attrs`: UI 스타일 관련 속성
                 - `text`: 
                     - `text`
-                - `body`: (Actor) 도형
+                - `body`: (*Actor*) 도형
                     - `stroke`: 외곽선 색상
                     - `strokeWidth`: 외곽선 두께께
                     - `strokeDasharray`: 외곽선의 점선 패턴을 정의하는 속성 ("선의 길이 공백 길이")
-                - `topLine`: (Store만) 상단 선분
+                - `topLine`: (*Store*) 상단 선분
                     - `stroke`
                     - `strokeWidth`
                     - `strokeDasharray`
-                - `bottomLine`: (Store만) 하단단 선분
+                - `bottomLine`: (*Store*) 하단단 선분
                     - `stroke`
                     - `strokeWidth`
                     - `strokeDasharray`
