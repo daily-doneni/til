@@ -22,12 +22,22 @@
         - `thumbnail`: 썸네일 경로 (Threat Dragon 내부 서버 상의 경로)
         - `version`: 다이어그램 포맷이 생성된 Threat Dragon 버전
         - `cells`: 다이어그램 안의 모든 구성요소를 배열로 가짐
-            - `position`: 캔버스 상 위치
+            - `position`: (*!Flow*)캔버스 상 위치
                 - `x`
                 - `y`
-            - `size`: 캔버스 상 크기
+            - `source`: (*Flow*) 출발 위치
+                - `x`
+                - `y`
+            - `target`: (*Flow*) 도착 위치
+                - `cell`
+                - `port`
+            - `vertices`: (*Flow*) 선분 상의 경로를 구부리기 위한 중간 꺾임 포인트
+            - `size`: (*!Flow*)캔버스 상 크기
                 - `width`
                 - `height`
+            - `width`: (*Flow*) 너비
+            - `height`: (*Flow*) 높이
+            - `connector`: (*Flow*) 직선("normal") 또는 곡선("smooth")
             - `attrs`: UI 스타일 관련 속성
                 - `text`: 
                     - `text`
@@ -42,6 +52,13 @@
                 - `bottomLine`: (*Store*) 하단단 선분
                     - `stroke`
                     - `strokeWidth`
+                    - `strokeDasharray`
+                - `line`: (*Flow*) 연결선
+                    - `stroke`: 선분 색상 16진수
+                    - `targetMarker`: 끝에 붙는 화살표 스타일
+                        - `name`: 종류 <u>"block"</u>, "", ...
+                    - `sourceMarker`: 머리에 붙는 화살표 스타일
+                        - `name`: <u>""</u>
                     - `strokeDasharray`
             - `visible`: 다이어그램 캔버스에 표시 여부
             - `shape`: UI 형태 및 논리적 역할을 결정 ("actor", "store", "process", "flow", "boundary")
@@ -104,6 +121,7 @@
                     - `id`: 포트의 고유 UUID → `flow`에서 참조됨
             - `id`: 해당 cell의 고유 UUID
             - `zIndex`: 렌더링 z축 순서 (숫자가 클수록 더 위에)
+            - `labels`: (*Flow*) 선분에 표시되는 이름
             - `data`
                 - `type`: 요소의 모델 타입 (tm.Actor, tm.Process, tm.Score, tm.Flow)
                 - `name`: UI에 표시될 이름 (Properties—Name)
@@ -121,6 +139,10 @@
                 - `handleCardPayment`: (*Process*) 결제 정보 처리 여부 bool (Properties—Card Payment)
                 - `isWebApplication`: (*Process*) 웹앱 기반 여부 bool (Properties—Web Application)
                 - `handleGoodsOrServices`: (*Process*) 실제 상품/서비스 처리 여부 (Properties—Goods or Services)
+                - `isBidirectional` : (*Flow*) 양방향 통신 여부 bool
+                - `isEncrypted`: (*Flow*) 암호화 여부 bool
+                - `isPublicNetwork`: (*Flow*) 공용망 여부 bool
+                - `protocol` : (*Flow*) 사용하는 프로토콜 string("" 가능)
                 - `threats`: 위협 목록
                     - `id`: 위협 고유 식별 UUID
                     - `title`: 위협의 제목 (Threats—Title)
