@@ -257,6 +257,73 @@
         - informationDiscloure
         - denialOfService
         - elaviationOfPrivilege
+- tools
+ - items
+ - name
+#### 2. `tm.Store`
+- position
+- size
+- attrs
+    - text
+    - topLine
+    - bottomLine
+- visible
+- shape
+- port
+    - groups
+        - top
+            - position
+            - attrs
+                - circle
+                    - r
+                    - magnet
+                    - stroke
+                    - strokeWidth
+                    - fill
+                    - style
+                        - visibility
+        - right (이하 동일)
+        - bottom (이하 동일)
+        - left (이하 동일)
+    - items 
+        - group
+        - id
+- id
+- zIndex
+- data
+    - type
+    - name
+    - description
+    - outOfScope
+    - reasonOutOfScope
+    - hasOpenThreats
+    - isALog
+    - isEncrypted
+    - isSigned
+    - storesCredentials
+    - storesInventory
+    - threats
+        - id
+        - title
+        - status
+        - severity
+        - type
+        - description
+        - mitigation
+        - modelType
+        - new
+        - number
+        - score
+    - threatFrequency
+        - spoofing
+        - tampering
+        - repudiation
+        - informationDiscloure
+        - denialOfService
+        - elaviationOfPrivilege
+- tools
+ - items
+ - name
 
 
 
