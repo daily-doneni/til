@@ -199,7 +199,7 @@
     - `reviewer`
     - `threatTop`: 위협 계층의 시작점 (렌더링)
 - `version`
-
+---
 ### 유형별 섹션 정리
 #### 1. `tm.Actor`
 - position
@@ -260,6 +260,7 @@
 - tools
  - items
  - name
+ ---
 #### 2. `tm.Store`
 - position
 - size
@@ -324,6 +325,7 @@
 - tools
  - items
  - name
+ ---
 #### 3. `tm.Process`
 - position
 - size
@@ -386,6 +388,7 @@
 - tools
  - items
  - name
+ ---
  #### 4. `tm.Flow`
 - attrs
     - line
@@ -437,7 +440,7 @@
  - items
  - name
 
-
+---
 ### 유형별 섹션 정리표 (참고용)
 | 필드                   | tm.Actor | tm.Store | tm.Process | tm.Flow |
 |------------------------|----------|----------|------------|---------|
@@ -469,6 +472,7 @@
 
 **결론: `cells` 내 요소들의 id를 다시 만들어주자**
 
+---
 ### **2. Trust Boundary 대신 C/S/O 라벨링**
 - dragon의 trust boundary는 단순한 선분 긋기임
     - 시각적으로 나타낼 뿐, json 상에는 경계를 알기 어려움
@@ -478,3 +482,5 @@
     - 따라서 굳이 trust boundary를 신경써서 넣을 것 없다
 
 **결론: trust boundary는 시각적 표시를 위해서만 쓰고, 신뢰도의 차이는 C/S/O 레벨을 부여해서 나타내자** 
+
+---
