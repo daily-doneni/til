@@ -109,7 +109,7 @@
                     - `id`: 위협 고유 식별 UUID
                     - `title`: 위협의 제목 (Threats—Title)
                     - `status`: 위협의 이름. "N/A", "Open", "Migigated" 중 하나 (Threats—Status) 
-                    - `severity`: 심각도. "TBD", "Low", "Medium", "High", "CriticaL" 중 하나 (Threats—Priority)
+                    - `severity`: 심각도. "TBD", "Low", "Medium", "High", "Critical" 중 하나 (Threats—Priority)
                     - `type`: STRIDE 분류 중 하나.
                                 - `shape`: UI 형태 및 논리적 역할을 결정 (actor, store, process, flow, boundary)
                         <details>
