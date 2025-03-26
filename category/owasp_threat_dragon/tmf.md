@@ -200,6 +200,30 @@
     - `threatTop`: 위협 계층의 시작점 (렌더링)
 - `version`
 
+### 유형별 섹션 정리표
+| 필드                   | tm.Actor | tm.Store | tm.Process | tm.Flow |
+|------------------------|----------|----------|------------|---------|
+| description            | ✅       | ✅       | ✅         | ✅      |
+| handlesCardPayment     |          |          | ✅         |         |
+| handlesGoodsOrServices |          |          | ✅         |         |
+| hasOpenThreats         | ✅       | ✅       | ✅         | ✅      |
+| isALog                 |          | ✅       |            |         |
+| isBidirectional        |          |          |            | ✅      |
+| isEncrypted            |          | ✅       |            | ✅      |
+| isPublicNetwork        |          |          |            | ✅      |
+| isSigned               |          | ✅       |            |         |
+| isWebApplication       |          |          | ✅         |         |
+| name                   | ✅       | ✅       | ✅         | ✅      |
+| outOfScope             | ✅       | ✅       | ✅         | ✅      |
+| privilegeLevel         |          |          | ✅         |         |
+| providesAuthentication | ✅       |          |            |         |
+| reasonOutOfScope       | ✅       | ✅       | ✅         | ✅      |
+| storesCredentials      |          | ✅       |            |         |
+| storesInventory        |          | ✅       |            |         |
+| threats                | ✅       | ✅       | ✅         | ✅      |
+| threatFrequency        | ✅       | ✅       | ✅         | ✅      |
+| type                   | ✅       | ✅       | ✅         | ✅      |
+
 ## 백로그
 ### **1. 검색 용이성 + 식별 편리성을 위해 id를 다시 입혀주어야 함**
 - 현재의 uuid 형식은 해당 요소가 어떤 타입인지(Actor/Store/Flow/... 혹은 Port) 구별 불가
