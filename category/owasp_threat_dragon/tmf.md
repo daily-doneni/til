@@ -135,9 +135,9 @@
                         <details>
                             <summary><b>종류</b></summary>
                             <div>
-                                <li>boundary: 셀을 트러스트 경계로 감싸는 기능</li>
-                                <li>button-remove</li>
-                                <li>button-clone</li>
+                                <li>boundary: 요소 크기 조절 및 회전</li>
+                                <li>button-remove: 요소 삭제</li>
+                                <li>button-clone: 요소 복제</li>
                                 <li>button-link</li>
                                 <li>button-settings</li>
                             </div>
